@@ -1,6 +1,6 @@
 # zhannam85.github.io
 
-Personal portfolio for Zhanna Myshkovskaya — Senior Frontend Engineer.
+Personal portfolio for Zhanna M. — Senior Frontend Engineer.
 
 **Live:** [https://zhannam85.github.io/](https://zhannam85.github.io/)
 

@@ -7,7 +7,7 @@ export default function App() {
       <div className="atmosphere" aria-hidden="true" />
 
       <header className="hero">
-        <p className="brand">Zhanna Myshkovskaya</p>
+        <p className="brand">Zhanna M.</p>
         <h1 className="headline">Senior Frontend Engineer</h1>
         <p className="lede">
           Angular and React for enterprise HR SaaS — jobs, compensation
