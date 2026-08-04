@@ -42,4 +42,12 @@ export const projects: Project[] = [
     stack: ['Node.js', 'JavaScript', 'Claude Code'],
     url: 'https://github.com/ZhannaM85/c-trail',
   },
+  {
+    name: 'turtle-steps-to-the-goal',
+    blurb:
+      'Local-first weight & nutrition companion — weekly pace goals, meals, macros, water, body metrics. No accounts, no cloud.',
+    stack: ['TypeScript', 'React'],
+    url: 'https://github.com/ZhannaM85/turtle-steps-to-the-goal',
+    demo: 'https://zhannam85.github.io/turtle-steps-to-the-goal/',
+  },
 ]

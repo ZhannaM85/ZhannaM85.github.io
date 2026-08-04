@@ -62,6 +62,16 @@ export default function App() {
                     {project.stack.join(' · ')}
                   </span>
                 </a>
+                {project.demo ? (
+                  <a
+                    className="project-demo"
+                    href={project.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live demo
+                  </a>
+                ) : null}
               </li>
             ))}
           </ul>
