@@ -1,0 +1,236 @@
+:root {
+  --ink: #152027;
+  --ink-soft: #3a4a55;
+  --paper: #e8eef2;
+  --paper-2: #f4f7f9;
+  --mist: #c5d4de;
+  --accent: #1f6f78;
+  --accent-hover: #15555c;
+  --line: rgba(21, 32, 39, 0.12);
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Figtree', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, #b8d4c8 0%, transparent 55%),
+    radial-gradient(ellipse 70% 45% at 100% 0%, #9eb8c9 0%, transparent 50%),
+    linear-gradient(180deg, var(--paper-2) 0%, var(--paper) 45%, #dfe8ee 100%);
+}
+
+.hero {
+  padding: clamp(4rem, 14vh, 7rem) 0 3rem;
+  animation: rise 0.7s ease both;
+}
+
+.brand {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.headline {
+  margin: 0 0 1rem;
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.lede {
+  margin: 0 0 1.75rem;
+  max-width: 34rem;
+  font-size: 1.125rem;
+  color: var(--ink-soft);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.45);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.cta:hover {
+  border-color: var(--accent);
+  color: var(--accent-hover);
+}
+
+.cta.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #f5fbfb;
+}
+
+.cta.primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #fff;
+}
+
+.work {
+  padding-top: 1rem;
+  animation: rise 0.7s ease 0.12s both;
+}
+
+.work h2 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 600;
+}
+
+.section-lede {
+  margin: 0 0 1.5rem;
+  color: var(--ink-soft);
+}
+
+.project-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.project {
+  border-bottom: 1px solid var(--line);
+  animation: rise 0.55s ease both;
+  animation-delay: calc(0.18s + var(--i) * 0.06s);
+}
+
+.project-link {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1.15rem 0.15rem;
+  text-decoration: none;
+  transition: padding-left 0.2s ease;
+}
+
+.project-link:hover {
+  padding-left: 0.35rem;
+}
+
+.project-link:hover .project-name {
+  color: var(--accent);
+}
+
+.project-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.project-blurb {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+.project-stack {
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.footer {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  animation: rise 0.7s ease 0.35s both;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: var(--accent);
+}
+
+.fine {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  .work,
+  .project,
+  .footer {
+    animation: none;
+  }
+
+  .project-link,
+  .cta {
+    transition: none;
+  }
+}
