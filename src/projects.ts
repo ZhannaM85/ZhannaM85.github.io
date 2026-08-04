@@ -15,9 +15,9 @@ export const projects: Project[] = [
     url: 'https://github.com/ZhannaM85/movie-chain-react',
   },
   {
-    name: 'Karkas',
+    name: 'interview-trainer-angular-app',
     blurb:
-      'Angular 21 interview trainer — practice technical answers under realistic time pressure.',
+      'Karkas — Angular 21 interview trainer for practising technical answers under realistic time pressure.',
     stack: ['Angular', 'TypeScript', 'SCSS'],
     url: 'https://github.com/ZhannaM85/interview-trainer-angular-app',
   },
@@ -34,5 +34,12 @@ export const projects: Project[] = [
       'Local symbol index for AI coding assistants — tree-sitter parse + SQLite for instant lookup.',
     stack: ['TypeScript', 'SQLite', 'tree-sitter'],
     url: 'https://github.com/ZhannaM85/zm-index',
+  },
+  {
+    name: 'c-trail',
+    blurb:
+      'CLI to browse and resume Claude Code sessions across all projects from a single terminal view.',
+    stack: ['Node.js', 'JavaScript', 'Claude Code'],
+    url: 'https://github.com/ZhannaM85/c-trail',
   },
 ]
