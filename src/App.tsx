@@ -15,11 +15,8 @@ export default function App() {
           Tbilisi; open to EU relocation.
         </p>
         <div className="cta-row">
-          <a className="cta primary" href="mailto:zhanna.myshkovskaya@gmail.com">
-            Email
-          </a>
           <a
-            className="cta"
+            className="cta primary"
             href="https://www.linkedin.com/in/zhanna-myshkovskaya-2a1b63291/"
             target="_blank"
             rel="noreferrer"
@@ -80,8 +77,13 @@ export default function App() {
 
       <footer className="footer">
         <p>
-          <a href="mailto:zhanna.myshkovskaya@gmail.com">
-            zhanna.myshkovskaya@gmail.com
+          Reach me on{' '}
+          <a
+            href="https://www.linkedin.com/in/zhanna-myshkovskaya-2a1b63291/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
           </a>
         </p>
         <p className="fine">Built with React · hosted on GitHub Pages</p>
